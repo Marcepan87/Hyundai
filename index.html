@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ogłoszenie sprzedaży auta</title>
   <style>
     body {
@@ -12,6 +13,7 @@
       color: #333;
       line-height: 1.6;
     }
+
     header {
       text-align: center;
       margin-bottom: 1.5em;
@@ -26,29 +28,32 @@
       color: #d35400;
       margin: 0.5em 0;
     }
+
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 0.5em;
-      justify-content: center;
       margin: 1em 0;
     }
     .gallery img {
-      max-width: calc(50% - 0.5em);
+      width: 100%;
       height: auto;
+      object-fit: cover;
       border: 1px solid #ccc;
     }
+
     .details, .contact {
-      margin: 1.5em 0;
-      padding: 1em;
       background: #f9f9f9;
       border: 1px solid #e1e1e1;
+      padding: 1em;
+      margin: 1.5em 0;
     }
     .details h2, .contact h2 {
       margin-top: 0;
       font-size: 1.2em;
       color: #0066cc;
     }
+
     footer {
       text-align: center;
       font-size: 0.9em;
@@ -60,49 +65,39 @@
 <body>
 
   <header>
-    <h1>Hyundai i30 1.4</h1>
-    <p class="price">Cena:  26 000 PLN</p>
+    <h1>Hyundai i30 1.4, 2012</h1>
+    <p class="price">Cena: 26 000 PLN</p>
   </header>
 
+  <!-- Pojedyncze zdjęcie zajmie całą szerokość -->
   <section class="gallery">
-    <img src="images/1.jpg" alt="Zdjęcie 1">
+    <img src="images/1.jpg" alt="Hyundai i30 – widok przód">
   </section>
 
   <section class="details">
     <h2>Opis samochodu</h2>
     <p>
-      Sprzedam niezawodne auto miejskie marki Hyuindai i30, II generacji, rok produkcji 2012. Auto jest w stanie idealnym, nie wymaga wkładu finansowego. Świeżo wymieniony olej + filtry w tym kabinowy, klimatyzacja działa rewelacyjnie- bardzo szybko chłodzi auto. Silnik pracuje równo, bardzo cicho, nic nie stuka. Bardzo dobrze się prowadzi.
-      Auto użytkowane przez prywatnego użytkownika, nie podszykowane na sprzedaż, posada normalne ślady użytkowania.
-      Na jednym ze zdjęć widać delikatnie na prawym przednim zderzaku otarcie. Zderzak jest plastikowy, brak pęknięć.
-      Auto jest bardzo ekonomiczne. W mieście pali średnio 6,5 - 7,0 litra/100 km, poza miastem 6 - 6,5 km- przy pracującej klimatyzacji i dynamicznej jeździe.
-      W sprzedaży razem z autem dwa komplety opon.
-      Przegląd ważny do 05/2026, OC ważne do 05/2026.
-
-      Wyposażenie:
-      * Klimatyzacja (w pełni sprawna)
-      * elektryczne szyby i lusterka
-      * ESP i ABS
-      * centralny zamek z pilotem
-      * radio CD/MP3, AUX, USB
-      * Isofix
-      * poduszki powietrzne (możliwość wyłączenia poduszki z przodu - dla montażu fotelika niemowlęcego)
+      Sprzedam niezawodne auto miejskie marki Hyundai i30 II generacji, rok 2012.
+      Stan idealny, świeżo wymieniony olej + filtry, klimatyzacja działa perfekcyjnie.
+      Przebieg 185 000 km, silnik 1.4 L/100 KM, kolor czerwony.
     </p>
     <ul>
       <li>Rok produkcji: 2012</li>
       <li>Przebieg: 185 000 km</li>
-      <li>Silnik: 1.4 L / 100 KM </li>
-      <li>Kolor: Czerwony</li>
+      <li>Wyposażenie: klimatyzacja, ESP, ABS, radio CD/MP3, Isofix</li>
+      <li>Dwa komplety opon, przegląd i OC ważne do 05/2026</li>
     </ul>
   </section>
 
+  <!-- Galeria wielu zdjęć: od 2 sztuk w górę -->
   <section class="gallery">
-    <img src="images/2.jpg" alt="Zdjęcie 2">
-    <img src="images/3.jpg" alt="Zdjęcie 3">
-    <img src="images/4.jpg" alt="Zdjęcie 4">
-    <img src="images/5.jpg" alt="Zdjęcie 5">
-    <img src="images/6.jpg" alt="Zdjęcie 6">
-    <img src="images/7.jpg" alt="Zdjęcie 7">
-    <img src="images/8.jpg" alt="Zdjęcie 8">
+    <img src="images/2.jpg" alt="2">
+    <img src="images/3.jpg" alt="3">
+    <img src="images/4.jpg" alt="4">
+    <img src="images/5.jpg" alt="5">
+    <img src="images/6.jpg" alt="6">
+    <img src="images/7.jpg" alt="7">
+    <img src="images/8.jpg" alt="8">
   </section>
 
   <section class="contact">
