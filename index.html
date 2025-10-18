@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Ogłoszenie sprzedaży auta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1em;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #0066cc;
+    }
+    .price {
+      font-size: 1.5em;
+      color: #d35400;
+      margin: 0.5em 0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      justify-content: center;
+      margin: 1em 0;
+    }
+    .gallery img {
+      max-width: calc(50% - 0.5em);
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    .details, .contact {
+      margin: 1.5em 0;
+      padding: 1em;
+      background: #f9f9f9;
+      border: 1px solid #e1e1e1;
+    }
+    .details h2, .contact h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+      color: #0066cc;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marka Model, Rok produkcji</h1>
+    <p class="price">Cena:  X 000 PLN</p>
+  </header>
+
+  <section class="gallery">
+    <img src="images/car1.jpg" alt="Zdjęcie 1">
+    <img src="images/car2.jpg" alt="Zdjęcie 2">
+    <img src="images/car3.jpg" alt="Zdjęcie 3">
+  </section>
+
+  <section class="details">
+    <h2>Opis samochodu</h2>
+    <p>
+      W tym miejscu wklej pełny opis: przebieg, stan techniczny, wyposażenie, powody sprzedaży itp.
+    </p>
+    <ul>
+      <li>Rok produkcji: 20XX</li>
+      <li>Przebieg: XX 000 km</li>
+      <li>Silnik: X.XX L / X KM / X skrzynia</li>
+      <li>Kolor: …</li>
+      <li>Wyposażenie dodatkowe: klimatyzacja, nawigacja, czujniki parkowania…</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Kontakt</h2>
+    <p>Imię i nazwisko: Jan Kowalski</p>
+    <p>Telefon: +48 123 456 789</p>
+    <p>Email: jan.kowalski@example.com</p>
+    <p>Lokalizacja: Miasto, województwo</p>
+  </section>
+
+  <footer>
+    Ogłoszenie wygenerowane automatycznie przez GitHub Pages
+  </footer>
+
+</body>
+</html>
